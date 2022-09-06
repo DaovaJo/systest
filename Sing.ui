@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>Form1</class>
+ <widget class="QWidget" name="Form1">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -43,7 +43,8 @@ QPushButton:hover{
 
 QTextEdit{
 	padding: 10% 10%;
-	color: #f9ed3f;
+	color: #ffc0cb;
+	font-size: 16px;
 }
 
 QLabel{
@@ -55,28 +56,12 @@ QLabel{
    <property name="geometry">
     <rect>
      <x>39</x>
-     <y>20</y>
+     <y>60</y>
      <width>271</width>
-     <height>459</height>
+     <height>291</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="7" column="0">
-     <widget class="QTextEdit" name="textEdit_4">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>449</width>
-        <height>58</height>
-       </size>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="0">
      <widget class="QTextEdit" name="textEdit">
       <property name="sizePolicy">
@@ -103,19 +88,6 @@ QLabel{
       </property>
      </widget>
     </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="maximumSize">
-       <size>
-        <width>449</width>
-        <height>23</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>Впишите свою кафедру </string>
-      </property>
-     </widget>
-    </item>
     <item row="4" column="0">
      <widget class="QLabel" name="label_3">
       <property name="maximumSize">
@@ -126,29 +98,6 @@ QLabel{
       </property>
       <property name="text">
        <string>Впишите корпоративную почту </string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="maximumSize">
-       <size>
-        <width>449</width>
-        <height>23</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>Впишите имя и отчество</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QTextEdit" name="textEdit_2">
-      <property name="maximumSize">
-       <size>
-        <width>449</width>
-        <height>58</height>
-       </size>
       </property>
      </widget>
     </item>
@@ -177,8 +126,14 @@ QLabel{
     </item>
     <item row="8" column="0">
      <widget class="QLabel" name="label_6">
+      <property name="maximumSize">
+       <size>
+        <width>449</width>
+        <height>23</height>
+       </size>
+      </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>Придумайте пароль</string>
       </property>
      </widget>
     </item>
@@ -188,7 +143,7 @@ QLabel{
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>510</y>
+     <y>380</y>
      <width>451</width>
      <height>16</height>
     </rect>
@@ -203,14 +158,109 @@ QLabel{
   <widget class="QCommandLinkButton" name="commandLinkButton">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>490</y>
-     <width>121</width>
+     <x>40</x>
+     <y>450</y>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>Завершить</string>
+    <string>Продолжить</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>60</y>
+     <width>281</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="maximumSize">
+       <size>
+        <width>449</width>
+        <height>58</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="maximumSize">
+       <size>
+        <width>449</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Впишите имя и отчество</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="maximumSize">
+       <size>
+        <width>449</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Впишите свою кафедру </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QTextEdit" name="textEdit_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>449</width>
+        <height>58</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>651</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #f9ed3f;
+font-weigh:700;
+</string>
+   </property>
+   <property name="text">
+    <string>Для регистрации аккаунта заполните форму</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>410</y>
+     <width>461</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Важно указать свою действительную корпоративную почту</string>
    </property>
   </widget>
  </widget>

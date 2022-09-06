@@ -6,24 +6,36 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBo
 
 
 from account import Ui_Form
+from SignForm import Form
 
 
-
-
-class Root(QWidget):
-    def __init__(self):
-        super(Root, self).__init__()
+class Account(QWidget):
+    def __init__(self, parent = None):
+        super(Account, self).__init__(parent)
         self.ui = Ui_Form()
         self.ui.setupUi(self)
 
+        self.ui.pushButton_2.clicked.connect(self.form)
+
+    def form(self):
+        self.close()
+        self.form = Form()
+        self.form.show()
 
 
-
-if __name__ == "__main__":
-
+def main():
     app = QApplication(sys.argv)
 
-    window = Root()
+    window = Account()
     window.show()
 
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+ 

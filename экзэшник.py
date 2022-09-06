@@ -4,8 +4,8 @@ import time
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QWidget, QVBoxLayout, QProgressBar
 from progress import Progers
-from untitled import Ui_MainWindow2
-from menu2 import Ui_MainWindow
+from untitled import Ui_MainWindow
+from mainWind import Ui_MainWindow2
 
 import os
 
@@ -39,7 +39,7 @@ class Root(QMainWindow):
        
         
         
-        self.ui.pushButton.clicked.connect(self.rep_btn)
+        # self.ui.pushButton.clicked.connect(self.rep_btn)
 
     # открыть скорректированный файл
     def open_correct_file(self):

@@ -43,6 +43,10 @@ QPushButton{
 	font-size: 14px;
 }
 
+QPushButton:hover{
+	background-color: #3c5874;
+}
+
 QGridLayout{
 	border-radius: 20px;
 }
@@ -105,16 +109,16 @@ QLabel{
      <x>0</x>
      <y>0</y>
      <width>738</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
     <property name="geometry">
      <rect>
-      <x>-1465</x>
-      <y>196</y>
-      <width>222</width>
-      <height>100</height>
+      <x>361</x>
+      <y>265</y>
+      <width>190</width>
+      <height>118</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -139,7 +143,7 @@ QLabel{
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../Downloads/avatar_male_man_people_person_profile_user_icon_123199.png</normaloff>../../../Downloads/avatar_male_man_people_person_profile_user_icon_123199.png</iconset>
+      <normaloff>объекты/иконка акк.png</normaloff>объекты/иконка акк.png</iconset>
     </property>
     <addaction name="action"/>
     <addaction name="action_2"/>

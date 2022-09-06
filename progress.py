@@ -19,9 +19,9 @@ class Progers(QtWidgets.QMainWindow):
         self.key_control = False
         self.a = 1
         self.f = 1
-        self.teacher = "Простомолотов Андрей Сергеевич"
+        self.teacher = ['1', '2', '3', '4']
         self.d = 11
-        self.forEvent = ['\Основная выписка на ', '\Изменения в выписке на ']
+    
         self.c = 0
         self.cc = list()
         number = None
@@ -97,8 +97,6 @@ class Progers(QtWidgets.QMainWindow):
             for i in f:
                 global c
                 global lst
-                
-                
 
                 time.sleep(0.1)
                 self.ui.progressBar.setValue(round((f.index(i)+100/len(f)-f.index(i)) * counter))

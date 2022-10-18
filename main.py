@@ -3,8 +3,8 @@ import sys
 import time
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QWidget, QVBoxLayout, QProgressBar
-from progress import Progers
-from untitled import Ui_MainWindow2
+from UIdesing_py.progress import Progers
+from UIdesing_py.finaly import Ui_Form
 
 
 import os
@@ -16,31 +16,13 @@ import re
 
 app = QApplication(sys.argv)
 
-root2 = Ui_MainWindow2()
-
-class Root(QMainWindow):
+class Root(QWidget):
     def __init__(self):
         super(Root, self).__init__()
-        self.ui = Ui_MainWindow()
-        self.ui2 = Ui_MainWindow2()
+        self.ui = Ui_Form()
         self.ui.setupUi(self)
-
-        self.key_control = True
-        self.a = 1
-        self.f = 1
-        self.teacher = "Дьяконова Ирина Анатольевна"
-        self.d = 11
-        self.forEvent = ['\Основная выписка на ', '\Изменения в выписке на ']
-        self.c = 0
-        self.cc = list()
-        number = None
-        self.key_window = False
         
-       
-        
-        
-        self.ui.pushButton.clicked.connect(self.rep_btn)
-
+        self.ui.check_nag.clicked.connect(self.open_correct_file)
     # открыть скорректированный файл
     def open_correct_file(self):
         if self.key_control == True:

@@ -114,28 +114,26 @@ class Progers(QtWidgets.QMainWindow):
                 sheet = book.active
                     
                 cells = sheet['D7':'O500']
-                for Data, Time, Class, Subjects, none, Group, Event, Teach, Com, Coment, Output, Departmant in cells:
+                for Data, n, nl, Time, Class, Subjects, none, Group, More, Event, Teach, Dep, Id in cells:
                     cc = list()
                     print(Data)
                         
                     if Teach.value == self.teacher: #and Departmant.value == 'Кафедра информационных систем':
-                        Data = Data.value
-                                
+                        Data = Data.value  
                         Time = Time.value
                         Class = Class.value
                         Subjects = Subjects.value
                         Group = Group.value
+                        More = More.value
                         Event = Event.value
                         Teach = Teach.value
-                        Com = Com.value
-                        Coment = Coment.value
-                        Output = Output.value
-                        Departmant = Departmant.value
+                        Dep = Dep.value
+                        Id = Id.value
                                 # print(Group)
                         self.search_group(Group)
                                 # print(num)
-                        print(Data, Time, Class, Subjects, Group, Event, Teach, Com, Coment, Output, Departmant)
-                        self.replacing(10, Data, Time, Class, Subjects, Group, Event, Teach, Com, Coment, Output, Departmant, num)
+                        print(Data, Time, Class, Subjects, Group, More, Event, Teach, Dep, Id)
+                        # self.replacing(10, Data, Time, Class, Subjects, Group, Event, Teach, Com, Coment, Output, Departmant, num)
                     else:
                         continue
                     

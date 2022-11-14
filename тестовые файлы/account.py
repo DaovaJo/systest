@@ -24,7 +24,7 @@ class Ui_Form(object):
             Form.setObjectName(u"Form")
         Form.resize(491, 508)
         Form.setStyleSheet(u"QWidget{\n"
-"	background-color: #121212;\n"
+"	background: linear-gradient(180deg, #801336 -38.96%, #2D142C 89.51%);\n"
 "}\n"
 "\n"
 "QPushButton{\n"

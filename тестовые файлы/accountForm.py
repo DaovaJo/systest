@@ -23,13 +23,20 @@ class Account(QWidget):
         self.form.show()
 
 
+
 def main():
     app = QApplication(sys.argv)
-
     window = Account()
     window.show()
 
     sys.exit(app.exec())
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     main()
